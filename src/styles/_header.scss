@@ -1,0 +1,126 @@
+.header {
+  min-height: 70px;
+  background: #252434;
+
+  &__inner {
+    padding-right: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__menu-btn {
+    width: 40px;
+    height: 40px;
+    background-image: url(../images/header-menu.png);
+    background-position: center;
+  }
+
+  &__nav {
+    margin-left: 330px;
+    display: flex;
+    align-items: center;
+    max-width: 535px;
+  }
+
+  &__item {
+    cursor: pointer;
+    position: relative;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 35px;
+    font-size: 14px;
+
+    &:nth-child(4) {
+      padding: 0;
+    }
+
+    &:nth-child(1) {
+      padding: 0 30px;
+      background: linear-gradient(#252435, #2b2a3b);
+
+      &::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(90deg, #b34c9c, #fa8868);
+      }
+    }
+
+    &:not(:last-child):hover {
+      background: linear-gradient(#252435, #2b2a3b);
+
+      &::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(90deg, #b34c9c, #fa8868);
+      }
+    }
+  }
+
+  &__btn {
+    font-family: "Geomanist", sans-serif;
+    cursor: pointer;
+    margin-left: 5px;
+    border: none;
+    background-color: transparent;
+    background-image: url(../images/header-btn.png);
+    background-position: center 0;
+    width: 106px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 42px;
+    color: #fff;
+  }
+  
+  &__user-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 265px;
+    width: 100%;
+  }
+
+  &__user-prize {
+    width: 30px;
+    height: 30px;
+    background-image: url(../images/header-prize.png);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &__user-message {
+    width: 30px;
+    height: 30px;
+    background-image: url(../images/header-message.png);
+    background-repeat: no-repeat;
+    background-position: center -5px;
+  }
+
+  &__user-coin {
+    width: 85px;
+    padding-left: 40px;
+    font-size: 14px;
+    line-height: 38px;
+    background-image: url(../images/header-coin.png);
+    background-repeat: no-repeat;
+    background-position: center -10px;
+  }
+
+  &__user-avatar {
+    width: 50px;
+    height: 50px;
+    background-image: url(../images/header-avatar.png);
+    background-repeat: no-repeat;
+    background-position: center 0;
+  }
+}
