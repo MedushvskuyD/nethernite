@@ -10,16 +10,6 @@
   font-weight: medium;
   font-style: normal; }
 
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
-
-body {
-  margin: 0;
-  font-family: "Geomanist", sans-serif;
-  color: #fff;
-  letter-spacing: 0.64px; }
-
 a {
   display: inline-block;
   color: #fff;
@@ -32,7 +22,7 @@ ul {
 
 .container {
   max-width: 1366px;
-  padding: 0 30px;
+  padding: 0 25px;
   margin: 0 auto; }
 
 .header {
@@ -45,7 +35,15 @@ ul {
     display: flex;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
-            justify-content: space-between; }
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .header__menu-btn {
+    width: 40px;
+    height: 40px;
+    background-image: url(../images/header-menu.png);
+    background-position: center; }
   .header__nav {
     margin-left: 330px;
     display: -webkit-box;
@@ -53,7 +51,8 @@ ul {
     display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
-            align-items: center; }
+            align-items: center;
+    max-width: 535px; }
   .header__item {
     cursor: pointer;
     position: relative;
@@ -164,7 +163,9 @@ ul {
             justify-content: space-between; }
   .main__content {
     max-width: 830px;
-    width: 100%; }
+    min-width: 550px;
+    width: 100%;
+    margin-right: 30px; }
   .main__back {
     position: relative;
     font-size: 18px;
@@ -229,7 +230,8 @@ ul {
     padding: 25px; }
   .main__int-img {
     border-radius: 17px;
-    margin-bottom: 17px; }
+    margin-bottom: 17px;
+    max-width: 100%; }
   .main__int-title {
     font-family: "Geomanist-medium", sans-serif;
     font-size: 22px;
@@ -418,6 +420,7 @@ ul {
   .main__news-item {
     min-height: 260px;
     max-width: 443px;
+    min-width: 320px;
     width: 100%;
     background-image: url(../images/new.jpg);
     background-size: cover;
@@ -427,7 +430,7 @@ ul {
   .main__news-content {
     background-color: rgba(37, 36, 52, 0.8);
     height: 110px;
-    padding: 20px 55px 0 28px;
+    padding: 20px 35px 0 28px;
     border-radius: 0 0 11px 11px;
     -webkit-box-shadow: 0 22px 50px -10px rgba(0, 0, 0, 0.75);
             box-shadow: 0 22px 50px -10px rgba(0, 0, 0, 0.75); }
@@ -437,5 +440,83 @@ ul {
   .main__news-text {
     font-size: 14px;
     color: #9d9acc; }
+
+@media (max-width: 1250px) {
+  .header__nav {
+    margin: 0; } }
+
+@media (max-width: 1000px) {
+  .container {
+    padding: 0 20px; }
+  .header__inner {
+    display: block;
+    padding-bottom: 10px; }
+  .header__user-nav {
+    margin-left: auto; }
+  .main__inner {
+    display: block;
+    padding-top: 20px; }
+  .main__content {
+    max-width: 100%;
+    min-width: 320px; }
+  .main__int-box {
+    text-align: center; }
+  .main__comments {
+    border-radius: 12px; }
+  .main__news {
+    margin: 35px auto 0;
+    text-align: center;
+    max-width: 100%; }
+  .main__news-list {
+    padding-bottom: 42px; }
+  .main__news-item {
+    max-width: 100%;
+    background-position-y: -30px; } }
+
+@media (max-width: 600px) {
+  .container {
+    padding: 0; }
+  .header__inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-bottom: 0; }
+  .header__nav {
+    display: none; }
+  .header__user-nav {
+    padding: 20px;
+    max-width: 100%;
+    margin-left: auto; }
+  .main__inner {
+    padding-top: 20px; }
+  .main__back {
+    margin-left: 20px; }
+  .main__int-networks {
+    display: block;
+    padding: 20px; }
+  .main__int-status {
+    max-width: 100%;
+    margin-bottom: 10px; }
+  .main__int-list {
+    max-width: 100%; }
+  .main__comments-top {
+    display: block;
+    padding-top: 20px; }
+  .main__comments-counter {
+    text-align: center; }
+  .main__comments-links {
+    max-width: 100%; }
+  .main__news-item {
+    background-position-y: 0; } }
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: "Geomanist", sans-serif;
+  color: #fff;
+  letter-spacing: 0.64px; }
 
 /*# sourceMappingURL=main.css.map */
